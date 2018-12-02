@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=3">
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("11.jpg");
+    background-color: whitesmoke;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 1400px 700px;
+      
+  }
+  
+input[type=text], input[type=password],input[type=submit] {
+    width: 30%;
+    padding:12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 5px 0 7px 40px;
+     
+}
+label{
+    color: white;
+}
+h2{
+    color: white;
+}
+img.avatar {
+    width: 25%;
+    border-radius: 25%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 100px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+.m
+{
+  margin-left: 80px;
+}
+</style>
+</head>
+<body>
+
+<center><h2>Login Form</h2></center>
+
+<form action="Login">
+  <div class="imgcontainer">
+    <img src="1.jpg" width="150" height="150">
+  </div>
+<center>
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" pattern="[^ @]*@[^ @]*" required>
+<br>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" pattern=".{6,}" title="Must contain at least one number and one lowercase and one uppercase letter and at least 6 or more character" required>
+        <br><div class="m">
+            <input type="submit" value="Login">
+  </div>
+<br>
+  <div><div class="m">
+      <a href="signup.html"><button type="button" >Signup</button></a></div>
+  </div>
+</center>
+</form>
+
+</body>
+</html>
